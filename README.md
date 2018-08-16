@@ -6,7 +6,8 @@
 [gif2]: ./project_images/track_overview.gif
 
 
-![alt text][image1]  ![alt text][gif1] 
+![alt text][gif1]
+![alt text][image1] 
 
 
 This git contains code for several autonomous car techniques applied to a RC-Car. It is splitted in a **"pipeline"** and a **"program"** part, respectively. The "pipeline" part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. It was able to drive around the track and contains the logic for connecting the different parts of the project.
