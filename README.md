@@ -3,10 +3,11 @@
 [//]: # (Image References)
 [image1]: ./project_images/overview_1.jpg
 [gif1]: ./project_images/run_qr_2x.gif
-[gif2]: ./project_images/track_overview.gif
+[gif2]: ./project_images/whole_top_2x.gif
+[gif3]: ./project_images/track_overview.gif
 
 
-![alt text][gif1]
+![alt text][gif1] ![alt text][gif2]
 ![alt text][image1] 
 
 
@@ -15,8 +16,8 @@ However, since I assume the pipeline approach would **not** generalize well to o
 
 Further **code/explanations** can be found within the certain folders.
 
-**Track overview**
-![alt text][gif2] 
+**Track overview** <br/>
+![alt text][gif3] 
 
 
 ## Dependencies
@@ -30,8 +31,3 @@ Further **code/explanations** can be found within the certain folders.
 **Raspberry Pi 3B**:
 * keras 2.2.0
 * tensorflow 1.9.0
-
-
-Repository structure:
-* Pipeline
-* Program
