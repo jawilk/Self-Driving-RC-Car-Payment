@@ -1,4 +1,4 @@
-# RC-Car-IOT(A)
+# Self-Driving-RC-Car-Payment
 
 [//]: # (Image References)
 [image1]: ./project_images/overview.jpg
