@@ -1,28 +1,33 @@
-# RC-Car-IOTA
+# QR-Code Detection and Decoding
 
 [//]: # (Image References)
-[image1]: ./project_images/overview.jpg
+[image1]: ./project_images/qr_img_barrier.jpg
+[image2]: ./project_images/detected_qr_code.jpg
 
 
 ![alt text][image1] 
 
+## Run
+Original image dimensions are **2048x1236**.
+Open a console, then run:
+```python
+python qr_detection.py 1 # arg 0 for no display
+```
+Should yield this:<br/>
+![alt text][image2] <br/>
+> The address is: GXHCZXIPIQWYGYUUUOYKL9DUEAJGLINGMMOJADZDNPHHSRJOJLMPLKBMFXSQPAPVDUFHLBGOBO9TBCQHAMZSMEIPHC
 
-This git contains code ... . It is splitted in a "pipeline" and a "program" part, respectively. The "pipeline" part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. It was able to drive around the track and contains the logic for connection the different parts of the project.
-However, since I assume the standalone pipeline would not generalise well to other environment conditions, the "program" part contains single programs which are part of the pipeline, without any connection.
+## Situation
+Car is waiting in front of barrier. Raspberry Pi camera is restarting with higher resolution, then streaming pictures to PC. PC receives images and starts searching for QR-Code. Making transaction after decoding barrier's address.
+## Shortcomings
+* Need reinitialization of Raspberry Pi camera with higher resolution, may try threading solution again
+* Car needs to park in certain angle to be able to read qr-code
+## Improvements
+* Lower resolution decoding
+* Moving camera to allow wider range scanning
 
 
-## Dependecies
-**PC**
-* python 3.5.5
-* keras 2.2.0
-* tensorflow 1.9.0
-* opencv 3.2.0
-* pyota 2.0.6
-
-**Raspberry Pi 3B**:
-* keras 2.2.0
-* tensorflow 1.9.0
+## Sources
+* <https://github.com/dlenski/python-zxing>
 
 
-Repositority structure:
-* Pipeline

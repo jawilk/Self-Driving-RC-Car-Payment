@@ -14,7 +14,7 @@ Open a console, then run:
 ```python
 python lane_new.py
 ```
-Should yield this:
+Should yield this:<br/>
 ![alt text][image1] 
 
 
