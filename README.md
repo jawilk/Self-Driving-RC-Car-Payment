@@ -8,15 +8,19 @@
 
 [gif1]: ./project_images/run_qr_2x.gif
 [gif2]: ./project_images/whole_top_2x.gif
-[gif3]: ./project_images/track_overview_2x.gif
+[gif3]: ./project_images/lane.gif
+[gif4]: ./project_images/track_overview_2x.gif
 
 
 ![alt text][gif1] ![alt text][gif2]
+![alt text][gif3]
 <br/>
 <br/>
 
-This git contains code for several autonomous car techniques applied to a RC-Car. It is splitted in a **"pipeline"** and a **"program"** part, respectively. The **"pipeline"** part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. It was able to drive around the track and contains the logic for connecting the different parts of the project.
-However, since I assume the pipeline approach would **not** generalize well to other environment conditions, the **"program"** part contains standalone code for every **single** technique which was used in the original pipeline, without any connection. 
+This repository contains code for several autonomous car techniques applied to a RC-Car. It is splitted in a **"pipeline** and a **"program"** part, respectively. The **"pipeline"** part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. This code was able to drive the car around the track and contains the logic for connecting the different parts of the project. <br/>
+However, since I assume the pipeline approach would **not** generalize well to other environment conditions, the **"program"** part contains standalone code for every **single** technique which was used in the original pipeline, without any connections in-between. 
+
+Even if there are several different features, the main focus of this project was to make the car to pay for the barrier on its own, without human interaction. 
 
 Further **code/explanations** can be found within the certain folders.
 <br/>
@@ -27,7 +31,7 @@ Further **code/explanations** can be found within the certain folders.
 
 
 **Track overview** <br/>
-![alt text][gif3] 
+![alt text][gif4] 
 
 ## Shortcomings
 
@@ -47,10 +51,12 @@ Further **code/explanations** can be found within the certain folders.
 * tensorflow 1.9.0
 
 ## Sources
-* A great help and inspiration was this project by Zheng Wang:
-  <https://zhengludwig.wordpress.com/projects/self-driving-rc-car/>
+* A great help and inspiration was this project by Zheng Wang: <br/>
+  <https://zhengludwig.wordpress.com/projects/self-driving-rc-car/> <br/>
   <https://github.com/hamuchiwa/AutoRCCar>
-  
+
+* <https://github.com/multunus/autonomous-rc-car>
+
 * <https://github.com/AutoModelCar/AutoModelCarWiki/wiki>
 
 * <https://custom-build-robots.com/raspberry-pi-roboter/autonom-fahrendes-raspberry-pi-ki-roboter-auto-elektronik-donkeycar/9775> (german)
