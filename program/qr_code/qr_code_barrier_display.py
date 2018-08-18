@@ -15,12 +15,12 @@ tim = time.time()
 tim_2 = 0
 root = tk.Tk()
 root.geometry('%sx%s+%s+%s'%(1500,1100,-1100,-100)) #(w,h,a,b)
-img = ImageTk.PhotoImage(file="IOTA/qr_code.png")
+img = ImageTk.PhotoImage(file="project_images/qr_code.png")
 panel = tk.Label(image = img)
 panel.configure(bg='black')
 panel.pack(side = "bottom", fill = "both", expand = "yes")
 def callback():
-    img2 = ImageTk.PhotoImage(file='IOTA/safe_drive.png')
+    img2 = ImageTk.PhotoImage(file='project_images/safe_drive.png')
     panel.configure(image=img2)
     panel.image = img2
     #root.after(5000, lambda: root.destroy())

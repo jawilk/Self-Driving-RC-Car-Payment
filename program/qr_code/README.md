@@ -1,4 +1,4 @@
-# QR-Code Detection and Decoding
+# QR-Code Detection, Decoding and Displaying
 
 [//]: # (Image References)
 [image1]: ./project_images/qr_img_barrier.jpg
@@ -21,6 +21,7 @@ Should yield this:<br/>
 ## Situation
 **(i)**
 Car is waiting in front of barrier. Raspberry Pi camera is restarting with higher resolution, then streaming pictures to PC. PC receives images and starts searching for QR-Code. Making transaction after decoding barrier's address.<br/>
+<br/>
 **(ii)**
 Car has arrived at the barrier. Barrier motion detection of the car has detected that the car isn't moving anymore, barrier ultra sonic sensor has detected an obstacle. PC is displaying QR-Code on second screen device (phone).
 ## Shortcomings
