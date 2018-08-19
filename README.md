@@ -9,7 +9,7 @@
 
 [gif1]: ./project_images/run_qr_2x.gif
 [gif2]: ./project_images/whole_top_2x.gif
-[gif3]: ./project_images/lane.gif
+[gif3]: ./project_images/lane_traffic_sign.gif
 [gif4]: ./project_images/track_overview_2x.gif
 
 
