@@ -8,6 +8,11 @@ import numpy as np
 import cv2
 
 def sign_threshold(img):
+    '''
+    Thresholding function to search for traffic sign candidates
+    :param img: Single image to be thresholded
+    :return: Thresholded image data
+    '''
     # Stop
     img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     h,s,v = cv2.split(img_hsv)
@@ -43,11 +48,14 @@ def sign_threshold(img):
 
     return mask_all, img
 
-# Define a function that takes an imag# start and stop positions in both x and y, 
-# window size (x and y dimensions),  
-# and overlap fraction (for both x and y)
 def slide_window(img, x_start_stop=[None, None], y_start_stop=[None, None], 
                     xy_window=(64, 64), xy_overlap=(0.5, 0.5)):
+    '''
+    Define a function that takes an image start and stop positions in both x and y, 
+    window size (x and y dimensions),  and overlap fraction (for both x and y)
+    :return: List of extracted windows
+    '''
+
     # If x and/or y start/stop positions not defined, set to image size
     if x_start_stop[0] == None:
         x_start_stop[0] = 0
@@ -97,6 +105,11 @@ def normalize(image_data, a=0.1, b=0.9):
     return a + (((image_data-np.min(image_data)) * (b - a)) / (np.max(image_data) - np.min(image_data)))
 
 def predict_sign(img_cropped, model):
+    '''
+    Predicting function to predict traffic sign in cropped image 
+    :param img: Single cropped image; trained model 
+    :return: prediction number (0-5); probability of prediction
+    '''
     img_cropped = cv2.resize(img_cropped, (32,32))
     img_cropped = normalize(img_cropped)
     img_cropped = np.expand_dims(img_cropped, axis=0)
@@ -108,7 +121,8 @@ def predict_sign(img_cropped, model):
 
 
 def sign_pipeline(path_to_images, model):
-        
+    '''
+    '''
     prev_pred = 0
     for img_name in path_to_images:
         image = cv2.imread(img_name)
@@ -120,11 +134,11 @@ def sign_pipeline(path_to_images, model):
         img_tiny = []
         img_sign = None
         for window in windows:
-            #cv2.rectangle(img, window[0], window[1], (0,0,255), 4) # show all boxes
+            #cv2.rectangle(image, window[0], window[1], (0,0,255), 4) # show all boxes
             if np.sum(mask[window[0][1]:window[1][1],window[0][0]:window[1][0]]) <= 100000:
                 next
             else:
-             #   cv2.rectangle(img, window[0], window[1], (0,0,255), 4) # show thresholded boxes
+             #   cv2.rectangle(image, window[0], window[1], (0,0,255), 4) # show thresholded boxes
                 img_cropped =  img_2[window[0][1]:window[1][1],window[0][0]:window[1][0],:]
                 img_cropped_copy = img_cropped.copy()
                 pred_num, prob = predict_sign(img_cropped, model)
