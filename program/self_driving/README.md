@@ -104,8 +104,15 @@ To train the model, open **driving_model_train.py** and start training. See **Tr
 
 
 ### Driving
+**Note:** Establish bluetooth connection between Pi and HC-06 module first.<br/> 
+To test the trained model, move **driving_model.h5 + self_drive_pi.py** to your Pi and type
+```
+python3 self_drive_pi.py
+```
 
 ## Sources
+* <https://devblogs.nvidia.com/deep-learning-self-driving-cars/> 
+
 * Opencv and pi camera
   <https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/>
   
