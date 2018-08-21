@@ -45,19 +45,20 @@ A sliding window approach was used to extract regions of interest.
 ![alt text][image6] ![alt text][image7] ![alt text][image8]
 
 ## Run
+### Create training data
 **new_data.py** contains code for creating a new pickle file of an image folder, the dict dumped to the file has the stucture:
 > 'features': img_data, 'labels': labels
 
 For instance, if you have a folder structure like this:
 
 
-|-- images
----|-- 50_kmh
----|-- background
----|-- no_passing
----|-- priority
----|-- right_curve
----|-- stop
+|-- images<br/>
+---|-- 50_kmh<br/>
+---|-- background<br/>
+---|-- no_passing<br/>
+---|-- priority<br/>
+---|-- right_curve<br/>
+---|-- stop<br/>
 ```python
 python new_data.py 0 background
 ```

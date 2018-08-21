@@ -78,7 +78,7 @@ model.compile(loss='categorical_crossentropy',
 
 model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=nb_epoch, validation_data=(X_valid, y_valid))
     
-model.save('model_traffic_2_20epochs.h5')
+model.save('model_traffic_2_10epochs.h5')
 
 '''
 from keras.models import load_model
