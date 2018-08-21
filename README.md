@@ -19,7 +19,7 @@
 <br/>
 <br/>
 
-This repository contains code for several autonomous car techniques applied to a RC-Car. It is splitted in a **"pipeline"** and a **"program"** part, respectively. The **"pipeline"** part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. This code was able to drive the car around the track and contains the logic for connecting the different parts of the project. <br/>
+This repository contains code for several autonomous car techniques applied to an RC-Car. It is splitted in a **"pipeline"** and a **"program"** part, respectively. The **"pipeline"** part contains the whole project as it was served to the PC, Arduino and Raspberry Pi. This code was able to drive the car around the track and contains the logic for connecting the different parts of the project. <br/>
 However, since I assume the pipeline approach would **not** generalize well to other environment conditions, the **"program"** part contains standalone code for every **single** technique which was used in the original pipeline, without any connections in-between. 
 
 Even if there are several different features, the main focus of this project was to make the car to pay for the barrier on its own, without human interaction. 
