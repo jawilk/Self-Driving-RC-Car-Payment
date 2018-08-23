@@ -12,12 +12,17 @@
 [gif2]: ./project_images/whole_top_2x.gif
 [gif3]: ./project_images/lane_traffic_sign.gif
 [gif4]: ./project_images/barrier_moving_car.gif
-[gif5]: ./project_images/track_overview_2x.gif
+[gif5]: ./project_images/payment.gif
+[gif6]: ./project_images/track_overview_2x.gif
 
+
+<https://youtu.be/0tvsjX1nmS0> - Full overview
+<https://youtu.be/6oKXf77ebHk> - IOTA payment
 
 ![alt text][gif1] ![alt text][gif2]
 ![alt text][gif3]
 ![alt text][gif4]
+![alt text][gif5]
 <br/>
 <br/>
 
@@ -35,7 +40,7 @@ Further **code/explanations** can be found within the certain folders.
 
 
 ## Track overview <br/>
-![alt text][gif5] 
+![alt text][gif6] 
 
 ![alt text][image5]
 ###### (Made with draw.io)
