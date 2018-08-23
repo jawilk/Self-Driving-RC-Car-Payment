@@ -28,7 +28,7 @@ def hough_lines(img_org, img_binary, rho=1, theta=np.pi/180, threshold=15, min_l
             
         cv2.line(img_org,(x1,y1),(x2,y2),(0,255,0),2)
         m = (y2-y1)/(x2-x1)
-        text = 'Curvature: ' + str(m)
+        text = 'Slope: ' + str(m)
         cv2.putText(img_org, text, (10,20),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),1)
 
     return img_org
