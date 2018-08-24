@@ -16,7 +16,7 @@
 [gif6]: ./project_images/track_overview_2x.gif
 
 
-<https://youtu.be/0tvsjX1nmS0> - Full overview<br/>
+<https://youtu.be/QcF_GyHxAbs> - Full overview<br/>
 <https://youtu.be/6oKXf77ebHk> - IOTA payment
 
 ![alt text][gif1] ![alt text][gif2]
