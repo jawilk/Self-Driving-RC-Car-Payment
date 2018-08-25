@@ -45,6 +45,12 @@ Further **code/explanations** can be found within the certain folders.
 ![alt text][image5]
 ###### (Made with draw.io)
 
+## Shortcomings
+* The first goal was to make the pipeline working, so more or less basic techniques were used for setting it all up. In the future certain parts can be replaced with more sophisticated techniques.
+## Improvements
+* Improve the payment process with device identification and/or other data exchange protocols (e.g. TCP/IP)
+* Use IOTA's MAM/WebRTC
+* Path planning to park the car in a more reliable way in front of the barrier 
 
 ## Dependencies
 **PC**
@@ -76,3 +82,8 @@ Further **code/explanations** can be found within the certain folders.
 * Udacity Self-Driving Car Engineer Nanodegree (Part 1)
 
 More sources can be found in the specific **"program"** sections.
+
+## Ideas for future improvements/Other inspirational sources
+* <https://github.com/AutoModelCar/AutoModelCarWiki/wiki/open-research-topics-for-the-model-car>
+* <https://blog.iota.org/worlds-first-iota-smart-charging-station-52f9024db788>
+* <https://hackernoon.com/reimagining-mobility-with-blockchain-e5ad483f85f2>* 

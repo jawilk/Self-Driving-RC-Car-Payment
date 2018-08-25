@@ -1,10 +1,15 @@
 # Self-Driving-RC-Car-Payment - Full Pipeline
 
 
-[//]: # (Image References)
-[image1]: ./project_images/project_structure_diagram.jpg
+## Run
+```
+python read_stream.py
+```
 
-![alt text][image1] 
+## Sources
+* <https://picamera.readthedocs.io/en/release-1.12/fov.html>
+* <https://picamera.readthedocs.io/en/release-1.10/recipes1.html#capturing-to-a-network-stream>
+* <https://github.com/waveform80/picamera>
 
 
 

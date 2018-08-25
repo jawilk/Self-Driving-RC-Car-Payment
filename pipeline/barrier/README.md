@@ -1,11 +1,8 @@
 # Self-Driving-RC-Car-Payment - Full Pipeline
 
 
-[//]: # (Image References)
-[image1]: ./project_images/project_structure_diagram.jpg
-
-![alt text][image1] 
-
+## Run
+**barrier_car_detection.py** should be executed on PC as well after establishing serial connection with arduino (which is connected to barrier servo and ultra sonic).
 
 
 
