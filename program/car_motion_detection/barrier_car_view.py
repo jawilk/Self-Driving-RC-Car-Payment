@@ -13,7 +13,7 @@ def hough_lines(img_org, img_binary, rho=1, theta=np.pi/180, threshold=15, min_l
     """
     img_binary should be the output of a binary threshold transform. 
     img_org is original image to be drawn on     
-    Returns an image with hough lines drawn + text of line curvature in top left corner
+    :return: An image with hough lines drawn + text of line curvature in top left corner
     """    
     lines = cv2.HoughLines(img_binary, rho, theta, threshold, min_line_len, max_line_gap)
     for rho_new, theta_new in lines[0]:
@@ -37,7 +37,7 @@ def find_contours(img_org, binary_img):
     """
     img_binary should be the output of a binary threshold transform. 
     img_org is original image to be drawn on     
-    Returns an image with rectangle(s) drawn around regions of interest
+    :return: An image with rectangle(s) drawn around regions of interest
     """    
     _,contours, _= cv2.findContours(binary_img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     for cnt in contours:

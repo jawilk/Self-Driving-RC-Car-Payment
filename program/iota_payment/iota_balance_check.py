@@ -45,9 +45,6 @@ def run():
     
         # Pause for 1 sec.
         time.sleep(1)
-   
-#def get_device():
- #   return bluetooth.discover_devices()[0] # '00:13:EF:00:0D:FE'
 
     
 if __name__ == "__main__":
