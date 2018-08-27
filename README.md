@@ -46,11 +46,13 @@ Further **code/explanations** can be found within the certain folders.
 ###### (Made with draw.io)
 
 ## Shortcomings
-* The first goal was to make the pipeline working, so more or less basic techniques were used for setting it all up. In the future certain parts can be replaced with more sophisticated techniques.
+* The first goal was to make the pipeline working, so more or less basic techniques were used for setting it all up. In the future certain parts can be replaced with more sophisticated techniques
+* Right now the transaction time is not acceptable for a useful system, but this shouldn't be a future issue (with many more users) regarding the tangle architecture  
 ## Improvements
 * Improve the payment process with device identification and/or other data exchange protocols (e.g. TCP/IP)
-* Use IOTA's MAM/WebRTC
-* Path planning to park the car in a more reliable way in front of the barrier 
+* Use IOTA's MAM/WebRTC/MQTT
+* Path planning to park the car in a more reliable way in front of the barrier
+* Add another barrier and let the car pay for the time difference between passing 1st and 2nd barrier
 
 ## Dependencies
 **PC**
