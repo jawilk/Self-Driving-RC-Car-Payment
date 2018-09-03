@@ -17,8 +17,8 @@
 
 
 <https://youtu.be/QcF_GyHxAbs> - Full overview<br/>
-<https://youtu.be/6oKXf77ebHk> - IOTA payment
-<https://medium.com/@jawilk/autonomous-rc-car-pays-for-barrier-on-its-own-using-iota-ab5cc6db6038>
+<https://youtu.be/6oKXf77ebHk> - IOTA payment<br/>
+<https://medium.com/@jawilk/autonomous-rc-car-pays-for-barrier-on-its-own-using-iota-ab5cc6db6038> <br/>
 
 ![alt text][gif1] ![alt text][gif2]
 ![alt text][gif3]
